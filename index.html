@@ -1,40 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!--  Link CSS -->
+    <link rel="stylesheet" href="./app.css" />
+    <!-- link Google Fonts  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Kumbh+Sans"
+    />
+    <!-- link bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .hidden {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div id="container" class="container">
+        <div class="row">
+          <div class="col1 col-6 hidden" style="padding-left: 25px">
+            <img
+              id="womanOnline"
+              src="./images/illustration-woman-online-desktop.svg"
+              alt="Wonan Online Desktop"
+            />
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+            <img
+              id="boxDesktop"
+              src="./images/illustration-box-desktop.svg"
+              alt="Box Desktop"
+            />
+          </div>
+          <div
+            class="col2 col-6"
+            style="padding-left: 50px; padding-right: 25px"
+          >
+            <h1>FAQ</h1>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                How many team members can I invite?
+                <span class="down-icon"></span>
+              </li>
+              <ul>
+                <li class="answers">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </li>
+              </ul>
+              <li class="list-group-item">
+                What is the maximum file upload size?
+                <span class="down-icon"></span>
+              </li>
+              <ul>
+                <li class="answers">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </li>
+              </ul>
+              <li class="list-group-item">
+                How do I reset my password?
+                <span class="down-icon"></span>
+              </li>
+              <ul>
+                <li class="answers">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you
+                </li>
+              </ul>
+              <li class="list-group-item">
+                Can I cancel my subscription? 
+                <span class="down-icon"></span>
+              </li>
+              <ul>
+                <li class="answers">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </li>
+              </ul>
+              <li class="list-group-item">
+                Do you provide additional support?
+                <span class="down-icon"></span>
+              </li>
+              <ul>
+                <li class="answers">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--     <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Link bootstrap JS -->\
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
