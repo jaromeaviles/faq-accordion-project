@@ -1,0 +1,65 @@
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    height: 100%;
+    width: 1440px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    
+}
+.content {
+    height: 600px;
+    width: 80%;
+    margin: 100px auto;
+    background: no-repeat linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    padding-top: 100px;
+    
+    
+}
+#container {
+    height: 420px;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    box-shadow: 5px 5px 5px hsl(240, 73%, 65%);
+    position: relative;
+}
+
+.col1 #womanOnline{ 
+    float: left;
+    margin: auto -100px;
+    filter: drop-shadow(10px 90px 1px hsl(270, 40%, 96%));   
+}
+
+.col1 #boxDesktop{ 
+    position: absolute;
+    top: 39%;
+    right: 86%;
+    
+}
+
+.col-6 {
+    font-size: 12px;
+    font-weight: 700px;
+    line-height: 35px;
+    padding: 25px 25px;
+    
+}
+.answers {
+    display: none;
+}
+
+.list-group-item {
+    text-decoration: none;
+    
+}
+
+.down-icon {
+    background:no-repeat url(./images/icon-arrow-down.svg);
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-top: 15px;
+    
+}
