@@ -165,6 +165,10 @@ body {
   line-height: 1.5;
 }
 
+.active-list {
+  height: 85px;
+}
+
 .list-group-item:hover {
   cursor: pointer;
   color: hsl(14, 88%, 65%);
@@ -193,10 +197,18 @@ body {
   line-height: 1.5;
 }
 
+
+
 .dropImg {
   position: absolute;
   right: 0;
   top: 15px;
+  transition: 0.3s ease-in;
+}
+
+.expand {
+  rotate: 180deg;
+  top: 11px;
 }
 
 .dropdown {
@@ -214,15 +226,16 @@ body {
 .dropdown-content p {
   display: none;
   color: hsl(240, 6%, 50%);
-  padding: 0px 16px;
+  padding: 0 16px;
   font-size: 12px;
 }
 
-.show {
+.dropdown-content .show {
   display: block;
 }
 
-@media screen and (min-width: 376px) {
+/* desktop */
+@media screen and (min-width: 992px) {
   .panel {
     height: 400px;
     display: flex;
@@ -263,5 +276,9 @@ body {
 
   .dropbtn {
     padding: 0px 16px 0 0px;
+  }
+
+  .dropdown-content p {
+    padding: 0;
   }
 }
