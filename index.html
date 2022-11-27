@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Meta tag for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <!--  Link CSS -->
     <link rel="stylesheet" href="./app.css" />
+    
     <!-- link Google Fonts  -->
     <link
       rel="stylesheet"
@@ -34,98 +36,91 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-      .hidden {
-        overflow: hidden;
-      }
     </style>
   </head>
   <body>
-    <div class="content">
-      <div id="container" class="container">
-        <div class="row">
-          <div class="col1 col-6 hidden" style="padding-left: 25px">
-            <img
-              id="womanOnline"
-              src="./images/illustration-woman-online-desktop.svg"
-              alt="Wonan Online Desktop"
-            />
+    <div class="panel">
+      <!--div1 -->
+      <div class="card-content div1">
+        <img
+          src="./images/illustration-woman-online-mobile.svg"
+          alt="Woman Mobile"
+          class="image1"
+        />
+        <img
+          src="./images/illustration-woman-online-desktop.svg"
+          alt="Woman Desktop"
+          class="image2"
+        />
+        <img
+          src="./images/illustration-box-desktop.svg"
+          alt="Box Desktop"
+          class="image3"
+        />
+      </div>
 
-            <img
-              id="boxDesktop"
-              src="./images/illustration-box-desktop.svg"
-              alt="Box Desktop"
-            />
-          </div>
-          <div
-            class="col2 col-6"
-            style="padding-left: 50px; padding-right: 25px"
-          >
-            <h1>FAQ</h1>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                How many team members can I invite?
-                <span class="down-icon"></span>
-              </li>
-              <ul>
-                <li class="answers">
-                  You can invite up to 2 additional users on the Free plan.
-                  There is no limit on team members for the Premium plan.
-                </li>
-              </ul>
-              <li class="list-group-item">
-                What is the maximum file upload size?
-                <span class="down-icon"></span>
-              </li>
-              <ul>
-                <li class="answers">
-                  No more than 2GB. All files in your account must fit your
-                  allotted storage space.
-                </li>
-              </ul>
-              <li class="list-group-item">
-                How do I reset my password?
-                <span class="down-icon"></span>
-              </li>
-              <ul>
-                <li class="answers">
-                  Click “Forgot password” from the login page or “Change
-                  password” from your profile page. A reset link will be emailed
-                  to you
-                </li>
-              </ul>
-              <li class="list-group-item">
-                Can I cancel my subscription? 
-                <span class="down-icon"></span>
-              </li>
-              <ul>
-                <li class="answers">
-                  Yes! Send us a message and we’ll process your request no
-                  questions asked.
-                </li>
-              </ul>
-              <li class="list-group-item">
-                Do you provide additional support?
-                <span class="down-icon"></span>
-              </li>
-              <ul>
-                <li class="answers">
-                  Chat and email support is available 24/7. Phone lines are open
-                  during normal business hours.
-                </li>
-              </ul>
-            </ul>
-          </div>
+      <!-- div2 -->
+      <div class="card-content">
+        <h1>FAQ</h1>
+          <!-- Create Dropdown menu -->
+        <div class="dropdown">
+          <ul class="list-group list-group-flush">
+            <!-- Question 1 -->
+            <li class="list-group-item">
+              <p class="dropbtn">How many team members can I invite? 
+              <img class="dropImg" src="./images/icon-arrow-down.svg" alt="Dropdown Image">
+              </p>
+              <div id="myDropdown" class="dropdown-content">
+                <p>You can invite up to 2 additional users on the Free plan. There is
+                  no limit on team members for the Premium plan.</p>
+              </div>
+            </li>
+            <!-- Question 2 -->
+            <li class="list-group-item">
+              <p class="dropbtn">What is the maximum file upload size?
+                <img class="dropImg" src="./images/icon-arrow-down.svg" alt="Dropdown Image">
+              </p>
+              <div id="myDropdown" class="dropdown-content">
+                <p>No more than 2GB. All files in your account must fit your allotted
+                  storage space.</p>
+              </div>
+            </li>
+            <!-- Question 3 -->
+            <li class="list-group-item">
+              <p class="dropbtn">How do I reset my password?
+                <img class="dropImg" src="./images/icon-arrow-down.svg" alt="Dropdown Image">
+              </p>
+              <div id="myDropdown" class="dropdown-content">
+                <p>Click “Forgot password” from the login page or “Change password”
+                  from your profile page. A reset link will be emailed to you.</p>
+              </div>
+            </li>
+            <!-- Question 4 -->
+            <li class="list-group-item">
+              <p class="dropbtn">Can I cancel my subscription?
+                <img class="dropImg" src="./images/icon-arrow-down.svg" alt="Dropdown Image">
+              </p>
+              <div id="myDropdown" class="dropdown-content">
+                <p>Yes! Send us a message and we’ll process your request no questions
+                  asked.</p>
+              </div>
+            </li>
+            <!-- Question 4 -->
+            <li class="list-group-item">
+              <p class="dropbtn">Do you provide additional support?
+                <img class="dropImg" src="./images/icon-arrow-down.svg" alt="Dropdown Image">
+              </p>
+              <div id="myDropdown" class="dropdown-content">
+                <p>Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <!--     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
-
-    <!-- Link bootstrap JS -->\
+    <!-- Link bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link JS -->
+    <link rel="stylesheet" href="./styleJS.js">
   </body>
 </html>
