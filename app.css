@@ -148,7 +148,7 @@ body {
   border-radius: 30px;
   width: 90%;
   max-width: fit-content;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -168,8 +168,16 @@ body {
   line-height: 1.5;
 }
 
+.list-group-item .dropdown-content {
+  height: 0;
+  transition: 0.3s ease-in;
+}
 .active-list {
   height: 90px;
+}
+
+.active-list .dropdown-content {
+  height: 45px;
 }
 
 .list-group-item:hover {
@@ -242,7 +250,7 @@ body {
 /* desktop */
 @media screen and (min-width: 992px) {
   .panel {
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: row;
     max-width: 700px;
