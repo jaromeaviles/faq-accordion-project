@@ -19,13 +19,13 @@ for(let i = 0; i < lists.length; i++) {
         // This will run if setClasses variable is true
         if (setClasses) {
             this.classList.toggle("active-list");
-            let icon = this.children[0].children[0];
+            let icon = this.children[0].children[1];
             icon.classList.toggle('expand');
             let dropContent = this.children[1].children[0];
             dropContent.classList.toggle("show");
         }
     }
-  };
+  }
 
     // This where the magic happens. 
     function setClass(els, className, fnName) {
@@ -33,5 +33,3 @@ for(let i = 0; i < lists.length; i++) {
             els[i].classList[fnName](className);
         }
     }
-  }
-}
