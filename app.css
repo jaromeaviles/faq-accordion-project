@@ -170,10 +170,11 @@ body {
 
 .list-group-item .dropdown-content {
   height: 0;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
 }
 .active-list {
   height: 90px;
+  transition: 0.3s ease-in-out;
 }
 
 .active-list .dropdown-content {
